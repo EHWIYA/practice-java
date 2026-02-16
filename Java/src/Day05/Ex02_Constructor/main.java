@@ -40,7 +40,13 @@ public class main {
         System.out.println("학생3 - 전공 : " + student3.major);
         System.out.println("학생3 - 학번 : " + student3.stdNo);
         student.study("축구");
-        System.out.println("학생3 - 중간고사 점수 : " + student2.getAverage(100, 90));
+        System.out.println("학생3 - 중간고사 점수 : " + student3.getAverage(100, 90));
+        System.out.println("학생3 - 기말고사 점수 : " + student3.getAverage(100, 90, 70));
+
+        int scores3[] = {100, 80, 70, 65, 95};
+        System.out.println("학생3 - 최종 점수 : " + student3.getAverage(scores3));
+
+        System.out.println();
     }
 
 }

@@ -56,4 +56,24 @@ public class Student {
         average = (score1 + score2) / 2.0;
         return average;
     }
+
+    public double getAverage( int score1, int score2, int score3 ) {
+        // TODO: 평균을 구하여 반환해보세요.
+        double average = 0.0;
+        average = (score1 + score2 + score3) / 3.0;
+        return average;
+    }
+
+    public double getAverage( int[] scores ) {
+        double average = 0.0;
+        int sum = 0;
+        // for (int i = 0; i < scores.length; i++) {
+        //     sum += scores[i];
+        // }
+        for (int score : scores) {
+            sum += score;
+        }
+        average = (double)sum / scores.length;
+        return average;
+    }
 }

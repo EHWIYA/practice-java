@@ -1,17 +1,12 @@
-# --- 기존 설정 유지 ---
-# Compiled class file
+# --- Java & Compile 관련 ---
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
 .mtj.tmp/
+hs_err_pid*
+replay_pid*
 
-# Package Files #
+# --- Package & Archive 파일 ---
 *.jar
 *.war
 *.nar
@@ -20,16 +15,16 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs
-hs_err_pid*
-replay_pid*
-
-# --- [추가] 이클립스(Eclipse) 및 빌드 설정 제외 ---
-# 현재 소스트리에 보이는 파일들
+# --- Eclipse IDE 관련 (현재 문제되는 파일들) ---
+.metadata/
 .classpath
 .project
 .settings/
 
-# 컴파일된 결과물 폴더
+# --- 빌드 결과물 (컴파일된 파일 저장소) ---
 bin/
 /Java/bin/
+
+# --- 기타 OS 관련 ---
+.DS_Store
+Thumbs.db

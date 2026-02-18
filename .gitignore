@@ -1,3 +1,4 @@
+# --- 기존 설정 유지 ---
 # Compiled class file
 *.class
 
@@ -19,6 +20,16 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# --- [추가] 이클립스(Eclipse) 및 빌드 설정 제외 ---
+# 현재 소스트리에 보이는 파일들
+.classpath
+.project
+.settings/
+
+# 컴파일된 결과물 폴더
+bin/
+/Java/bin/
